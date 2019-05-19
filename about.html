@@ -1,0 +1,112 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Big Btother's Blog</title>
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<link rel="stylesheet" type="text/css" href="./css/box.css">
+<style type="text/css">
+	article {
+		height: 700px;
+		text-align: center;
+	}
+	article p{
+		text-indent: 0em;
+	}
+</style>
+</head>
+
+<body>
+<header>
+<a href="index.html"><h1>Big Brother's Blog</h1></a>
+<h4>I'm watching you!</h4>
+</header>
+<nav>
+	<ul>
+		<li><a href="index.html">首页</a></li>
+		<!-- <li><a href="">归档</a></li> -->
+		<li><a href="about.html">关于</a></li>
+		<li><a href="t-rex-runner-gh-pages/index.html">小恐龙</a></li>
+		<li class="zhihu"><a  href="https://www.zhihu.com/people/ren-yuan-55-94/activities"><img src="./images/zhihu.png"></a></li>
+		<li class="weibo"><a  href="https://weibo.com/u/5856450175?is_hot=1"><img src="./images/weibo.png"></a></li>	
+	</ul>	
+</nav>	
+<div id="main">
+<div id="lside">
+<article>
+	<h2>关于我</h2>
+	<div class="" ="entry_content">
+		<p>AHMU的工科生</p>
+		<hr>
+		<p>前已无通路，后不见归途</p>
+		<p>敌视现实，虚构远方</p>
+		<p>东张西望，一无所长</p>
+		<p>四体不勤，五谷不分</p>
+		<p>文不能测字，武不能防身</p>
+		<p>喜欢养狗，不爱洗头</p>
+		<p>不事劳作，一无所获</p>
+		<p>厌恶争执，不善言说</p>
+		<p>终于沦为沉默的帮凶</p>
+		<p>借酒消愁，不太能喝</p>
+		<p>蛊惑他人，麻醉内心</p>
+		<p>浇上汽油，舒展眉头</p>
+		<p>前已无通路，后不见归途</p>
+	</div>
+</article>	
+</div>
+<div id="rside">
+	<aside>
+		<form action="http://www.baidu.com/baidu" target="_blank">
+			<input type="text" name="word"  placeholder="serch..."/>
+		</form>
+	</aside>
+	<aside>
+		<h4>科技评测</h4>
+	<ul>
+		<li><a href="https://www.coolapk.com/feed/11662395?shareKey=ZTczOWI0Y2RkMjY5NWNkZWU0MTI~&shareUid=1591161&shareFrom=com.coolapk.market_9.1.1">OPPO Reno10倍变焦版</a></li>
+		<li><a href="https://www.coolapk.com/feed/11168076?shareKey=MTc2OTBjZDcyYzFmNWNkZWU5YmM~&shareUid=1591161&shareFrom=com.coolapk.market_9.1.1">Marshall MAJOR III BT</a></li>
+		<li><a href="https://www.coolapk.com/feed/9103053?shareKey=MzRkYTkxMGMyZWYyNWNkZWVhOWI~&shareUid=1591161&shareFrom=com.coolapk.market_9.1.1">任天堂switch皮卡丘限定版</a></li>
+	</ul>
+	<h4>收藏文章</h4>
+	<ul>
+		<li><a href="./articles/fusinian.html">傅斯年论中医</a></li>
+		<li><a href="./articles/yudaye.html">谁来劝劝于大爷</a></li>
+		<li><a href="./articles/meifating.html">逃出美发厅</a></li>
+		<li><a href="./articles/yingpan.html">一块伟大的硬盘</a></li>
+	</ul>
+	<h4>链接博客</h4>
+	<ul>
+		<li><a href="http://www.ityouknow.com/">纯洁的微笑</a></li>
+		<li><a href="https://www.yanshiba.com/">燕十八的Blog</a></li>
+		<li><a href="http://relatos.top/">荒蛮故事</a></li>
+		<li><a href="http://liuyue.ren/">June Blog</a></li>
+	</ul>
+	</aside>	
+</div>
+</div>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div>
+<footer>
+	<a href="https://www.zhihu.com/people/ren-yuan-55-94/activities"><img src="./images/zhihu.png"></a>
+	<a href="https://weibo.com/u/5856450175?is_hot=1"><img src="./images/weibo.png"></a>
+</footer>
+</body>
+
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    timer = requestAnimationFrame(function fn(){
+        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if(oTop > 0){
+            document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+            timer = requestAnimationFrame(fn);
+        }else{
+            cancelAnimationFrame(timer);
+        }    
+    });
+}
+</script>
+
+</html>
